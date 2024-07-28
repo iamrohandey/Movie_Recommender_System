@@ -23,10 +23,10 @@ def recommend(movie):
         recommended_movies_posters.append(fetch_poster(movie_id))
     return recommended_movies, recommended_movies_posters
 
-movies_df = pickle.load(open('Movie Recommender System\movies.pkl', 'rb'))
+movies_df = pickle.load(open('movies.pkl', 'rb'))
 movies_list = movies_df['title'].values
 
-similarity = pickle.load(open('Movie Recommender System\similarity.pkl', 'rb'))
+similarity = pickle.load(open('similarity.pkl', 'rb'))
 
 st.title('Movie Recommender System')
 
